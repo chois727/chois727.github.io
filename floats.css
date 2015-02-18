@@ -1,0 +1,17 @@
+.wrapper {
+    width: 800px;
+    margin: auto;
+    border: 1px solid #f00000;
+}
+
+.padded {
+    padding: 10px;
+    border: 1px solid #ff0000;
+    margin: 10px;
+}
+
+#header {width: 758px; clear: both;}
+#content {width: 230px; height: 180px; float: left; margin-left: 10px; margin-right: 5px;}
+#middle {width: 230px; height: 180px; float: left; margin-left: 5px; margin-right: 5px;}
+#sidebar {width: 230px; height: 180px; float:right; margin-left: 5px; margin-right: 10px;}
+#footer { width: 758px; clear: both;}
