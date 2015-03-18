@@ -1,0 +1,18 @@
+.wrapper{
+    background: url(img/bluebells-blue-purple-flowers-forest-meadow-close-up-blur-bokeh-glare.jpg) 50%;
+    color: #FFF;
+    margin: auto;
+    width: 50%;
+    margin-top: 200px;
+    font-size: 32pt;
+    line-height: 1.2em;
+}
+
+.box {
+    border: solid 5px #fff;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 30px;
+}
