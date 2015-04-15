@@ -1,0 +1,125 @@
+html {
+    background: url(img/Light-Bulb-Lights-In-Sand-Wallpaper-HD.jpeg) 10% 20% fixed;
+}
+
+.wrapper{
+    color: #665f57;
+    height: 800px;
+    margin: 0px;
+    width 100%;   
+}
+
+.header {  
+    width: 100%;
+    height: 50px;
+    background: #01b5b6;
+    padding: 20px; 
+	font-family: 'Helvetica Neue', sans-serif;
+    position: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 15pt;
+    color: #fff;
+}
+
+h3 {
+    font-size: 15pt;
+}
+
+button {
+    float: left;
+    margin: auto;
+}
+
+.below {
+    width: 100%;
+    float: left;
+    margin: auto;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+
+#MadCTA {
+    margin-top: 30px;
+    background: #a0a0a0;
+    border: 1px;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    letter-spacing: 1em;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+#MadCTA:hover {
+    background: rgba(255,255,255, 0.3);
+} 
+
+#MadCTA:active {
+    background: #f0275f;
+} 
+
+
+#scroll {
+    background: #f0275f;
+    padding: 10px;
+    border: dashed 5px #d0dc72;
+}
+
+.box {
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    font-size: 14pt;
+    line-height: 1.4em;
+    font-family: sans-serif;
+}
+
+
+.sidetext{
+    float: left;
+
+}
+
+.sidetext2{
+    width: 60%;
+    float: left;
+    padding: 30px;
+    margin: 2%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.sumbutt {
+    border: dashed 5px #fff;
+    background: rgba(170,208,37,0.5);
+    width: 80%;
+    height: 120%;
+    margin: auto;
+    padding: 30px;
+}
+
+@media (max-width: 800px) {
+
+.sumbutt {
+    border: dashed 5px #fff;
+    background: rgba(170,208,37,0.5);
+    width: 80%;
+    height: 150%;
+    margin: auto;
+    padding: 30px;
+}
+
+}
