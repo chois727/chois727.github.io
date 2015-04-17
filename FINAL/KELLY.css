@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Righteous|Roboto);
+body {
+    background-color: whitesmoke;
+    display: table;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.container {
+    boder: 10px solid black;
+    height: 100%;
+    position: relative;
+    top: 15vh;
+    width: 100%;
+}
+
+header {
+    background-color: whitesmoke;
+    color: darkslateblue;
+    display: table;
+    font-family: 'Righteous', cursive;
+    font-size: 200%;
+    height: 15vh;
+    position: fixed;
+    text-align: center;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+    width: 100%;
+    z-index: 1;
+}
+
+section {
+    background-color: darkslateblue;
+    color: snow;
+    display: table;
+    height: 85vh;
+    font-family: 'Righteous', cursive;
+    font-size: 250%;
+    position: relative;
+    text-align: center;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+    width: 100%;
+}
+
+section:nth-of-type(2n) {
+    background-color: skyblue;
+}
+
+.flag {}
+
+.text-vcenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subtitle {
+    font-size: 50%;
+    font-family: 'Roboto';
+}
