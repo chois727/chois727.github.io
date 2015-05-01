@@ -1,0 +1,781 @@
+@import url(http://fonts.googleapis.com/css?family=Philosopher:700|Quicksand:700|Ubuntu|Open+Sans);
+
+html{
+}
+
+
+body {
+    background-color: whitesmoke;
+    display: table;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.DISCLAIMER{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    bottom: 0px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    
+}
+
+
+.container {
+    height: 100%;
+    position: relative;
+    top: 15vh;
+    width: 100%;
+}
+
+
+.logo{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 120%;
+}
+
+.logo:hover{
+    color: #ddf7c8;
+}
+
+header {
+    background-color: whitesmoke;
+    color: #078374;
+    display: table;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 200%;
+    height: 10vh;
+    position: fixed;
+    text-align: center;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+    width: 100%;
+    z-index: 100;
+}
+
+section {
+    color: transparent;
+    display: table;
+    height: 85vh;
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
+    width: 100%;
+}
+
+
+
+
+
+.text-vcenter {
+    display: table-cell;
+    line-height: 0.7em;
+}
+
+
+
+#text-vcenter2 {
+    display:table-footer-group;
+    vertical-align: middle;
+}
+
+.text-vcenter3 {
+    display: table-cell;
+}
+
+.HPb1 {
+    width: 33.333%;
+    float: left;
+    font-size: 250%;
+    line-height: 0.8em;
+    text-align: center;
+    padding-top: 5%;
+
+
+}
+
+.HPb1:hover{
+    color: snow;
+    transition: all 0.5s ease-out;
+    position: relative;
+    background-size: cover;
+    z-index: 30;
+}
+
+.HPs1 {
+    
+
+}
+
+
+
+/*--main homepage feature = featureM--*/
+
+
+.feature .featureM{
+    text-align: center;
+    line-height: 1em;
+    font-family: 'Philosopher', sans-serif;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+
+.featureM{
+    text-align: center;
+    height: 70%;
+    margin-top: -0.5%;
+    padding-top: 10%;
+    z-index: 20;
+
+}
+
+
+.feature{
+    margin-top: 20%;
+   
+}
+
+
+.F1text .F2text .F3text{
+    padding: 10%;
+    overflow: hidden;
+    
+}
+
+#F1{
+    background: url(img/HP/tumblr_nki5uxvgKs1rv33k2o2_1280.jpg);
+}
+
+
+#F1:hover{
+        background: url(img/HP/sparkly-142732.gif);
+        background-size: cover; 
+}
+
+#F2{
+    background: url(img/HP/Classics+2.JPG) 50% 70%;
+}
+
+#F2:hover{
+        background: url(img/HP/water.gif) 20% 70%;
+        background-size: cover;
+}
+
+#F3{
+    background: url(img/HP/11067447_1637318886504193_3291224496778018872_n.jpg) 50% 34%;
+}
+
+#F3:hover{
+        background: url(img/HP/tumblr_mn5hpm4jNz1s3d1b4o1_500.gif);
+        background-size: cover; 
+}
+
+.nav{
+    font-size: 50%;        
+    color: #0c7e76;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    float: left;
+    width: 21%;
+    letter-spacing: 0.3em;
+}
+.nav:hover{
+    font-size: 43%;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+    width: 21%;
+    letter-spacing: 0.3em;
+}
+
+a{
+        text-decoration: none;
+
+}
+
+a:hover{
+    color: #ff2524;
+}
+
+a:visited{
+    color: #0c7e76;
+
+}
+
+
+/*----scroll down arrow----*/
+
+
+.arrow-wrap {
+  position:absolute;
+  z-index: 40;
+  left: 45.6%;
+  top: 65%;
+  width: 5em;
+  height: 5em;
+  border-radius:50%;
+  font-size:0.5em;
+  display: block; 
+}
+
+.arrow {
+    float:left;
+    position:relative;
+    left: 12%;
+    top: 39%;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5em 5em 0 5em;
+    border-color: #FFF transparent transparent transparent;
+    
+    -webkit-transform:rotate(360deg)
+}
+
+.arrow:after {
+    content:'';
+    position:absolute;
+    top:-6em;
+    left: -4em;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 4em 4em 0 4em;
+    border-color: #ff2524 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.hint {
+  position:absolute;
+  top: -0em;
+  width:100%;
+  left: 0;
+  font-size: 4em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+
+
+
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+
+
+  @-webkit-keyframes arrows {
+    0%  { top:55%; }
+    10% { top:77%; }
+    20% { top:55; }
+    30% { top:77%; }
+    40% { top:43%; }
+    50% { top:77%; }
+    60% { top:55; }
+    70% { top:77%; }
+    80% { top:43%; }
+    90% { top:77%; }
+    100% { top:55%; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 1.8s 0.4s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+
+  }
+
+/*----scroll down arrow end----*/
+
+/*----link highlight effect----*/
+
+
+.linkOUT{
+    color: snow;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+.hoverlink{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 30px;
+
+}
+
+
+
+.HPb1:hover .linkOUT, .hoverlink:hover .linkOUT{
+    background: #ff2524;
+    height: 30px;
+    color: snow;
+    overflow: hidden;
+    -webkit-animation: linkHI;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    left: 0;
+    
+}
+
+
+
+
+@-webkit-keyframes linkHI {
+    0%  { width: 0%;
+          height: 30px;
+          color: transparent;        
+    }
+    70%{
+          color: snow;
+    }
+    100% { width: 100%;
+           height: 30px;
+           color: snow;        
+    }
+  }
+
+/*---stylize---*/
+
+.FLO{
+    color: transparent;
+    font-size: 40%;
+    clear: both;
+    text-align: center;
+    bottom: 0px;
+
+
+}
+
+.HPb1:hover .FLO{
+    color: snow;
+}
+
+.PinkTape{
+    text-align: left;
+    padding-top: 1.5%;
+    padding-left: 3%;
+}
+
+
+/*----link highlight effect end----*/
+
+.BtHP{
+    width: 100%;
+    height: 20px;
+    background: rgba(255,37,36,0.2);
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5% 0% 0.5% 10%;
+    color: snow;
+    position: fixed;
+    z-index: 98;
+}
+
+.FPs1{
+    color: snow;
+    position: relative;
+    height: 60%;
+    z-index: 0;
+    padding: 10% 20% 2% 10%;
+}
+.FPdes{
+    font-size: 200%;
+    background: #ff2524;
+    padding-top: 1.6%;
+    padding-left: 1%;
+    position: fixed;
+    z-index: 20;
+    height: 5%;
+    width: 75%;
+
+}
+
+.FPb1{
+    font-size: 700%;
+    margin-top: 10%;
+    padding-bottom: 0%;
+}
+.FPb1text{
+    color: snow;
+    position: relative;
+    height: 50%;
+    z-index: 0;
+    font-size: 250%;
+    padding: 10% 10% 2% 10%;
+    margin: 0%;
+}
+.FPb3text{
+    color: snow;
+    bottom: 40%;
+    height: 40px;
+    font-size: 120%;
+    padding: 1% 0% 0% 2%;
+    margin-left: 9%;
+    position: relative;
+    z-index: 1;
+
+}
+.FPs2{
+    background: #dfeaf0;
+    height: 100.5%;
+    
+
+}
+
+.quote{
+    font-size: 200%;
+    color: rgba(0,0,0,0.6);
+    font-style: italic;
+}
+
+.imgsubtext{
+    font-size: 80%;
+    font-weight: bold;
+
+
+}
+.FPs2text{
+    color: #538b9c;
+    font-size: 100%;
+    font-family: 'Open Sans';
+    padding: 10% 30% 0% 20%;
+
+}
+
+
+.FPs3{
+    width: 100%;
+    height: 300px;
+    float: left;
+    bottom: 0;
+    position: relative;
+    z-index: 0;
+    background: transparent;
+}
+
+.HPS1{
+    background: rgba(0,0,0,0.4);
+}
+
+.flag{
+
+}
+
+.HPS2{
+    background: #bcd8e3;
+    position: relative;
+    z-index: 30;
+}
+
+.banner{
+    width: 100%;        
+    background-size: cover;
+    color: snow;
+    text-align: left;
+    font-size: 200%;
+    position: relative;
+    clear: both;
+}
+
+.HPbanner1{
+    background: url(img/HP/tumblr_nm1sjofCGo1qacw13o4_1280.jpg) 90% 65%;
+    background-size: 120%;
+    min-height: 35%;
+    padding: 5% 2% 5% 8%;
+    color: snow;
+
+
+}
+
+.FPbanner1{
+    background: url(img/FP/tumblr_nm1sjofCGo1qacw13o7_1280.jpg);
+    height: 300px;
+
+}
+
+.FPbanner2{
+    background: url(img/FP/banner2.gif);
+    background-size: cover;
+    height: 300px;
+
+}
+
+.QiBan{
+    padding: 0% 0% 0% 10%;
+    font-size: 150%;
+}
+.title{
+    margin-top: -30px;
+    
+}
+
+.HPheadtext{
+    color: snow;
+    margin-top: 0%;
+    font-size: 450%;
+    
+}
+
+#bgvid {
+position: fixed;
+right: 0; 
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+width: auto; 
+height: auto; 
+z-index: -1;
+
+}
+
+#Fvid{
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1; 
+}
+
+
+
+
+
+.subtitle {
+    font-size: 40%;
+    font-family: 'Open Sans';
+    line-height: 1.2em;
+    text-align: left;
+    padding: 10%;
+}
+
+#aRM{
+    color: white;
+    font-size: 120%;
+}
+
+.ReadMode{
+    width: 400px;
+    height: 20px;
+    padding: 0.5%;
+    background: #70b879;
+    color: black;
+    position: fixed;
+    z-index: 0;
+    float: left;
+    top: 20%;
+    right: 10%;
+    
+    -webkit-animation: RMcolor;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.HPboxbr{
+    width: 20px;
+    height: 2000px;
+    padding: 0.5%;
+    background: #70b879;
+    position: fixed;
+    z-index: 0;
+    float: left;
+    top: 20%;
+    right: 10%;
+    
+    -webkit-animation: RMcolor;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+
+}
+
+
+
+/*----RM animation----*/
+
+
+
+@-webkit-keyframes RMcolor {
+    0%  { 
+        background: #ff2524;
+    }    
+    25%{
+        background: orange;
+    }
+    75%{
+        background: #0d7f77;
+    }
+    100% { 
+        background: #ff2524;
+    }
+  }
+/*----RM animation end----*/
+
+
+/*----9 boxes----*/
+
+.HPReview{
+    margin: 10%;
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    height: 50.3%;
+
+}
+
+.HPRCover{
+    background: url(img/bluebells-blue-purple-flowers-forest-meadow-close-up-blur-bokeh-glare.jpg);
+    background-size: cover;
+    overflow-x: auto;
+    width: 80%;
+    margin: 0%;
+    position: relative;
+    
+}
+
+.RboxAll{
+    width: 28.3%;
+    height: 200px;
+    float: left;
+    padding: 2.5%;
+    margin: 0%;
+    background: transparent;
+    
+}
+
+.RboxAll:hover{
+}
+.Rbox1 .Rbox2 .Rbox3 .Rbox4 .Rbox5 .Rbox6 .Rbox7 .Rbox8 .Rbox9{
+    color: transparent;
+}
+
+.Rbox1:hover{
+    background: url(img/HP/9box/Rbox1_hover_Shine.gif);
+    background-size: cover;
+}
+.Rbox2:hover{
+    background: url(img/HP/9box/Rbox1_hover_Shine.gif);
+    background-size: cover;   
+}
+.Rbox3:hover{
+    background: url(img/HP/9box/Rbox3_hover_Lunafly.gif);
+    background-size: cover;   
+}
+
+.Rbox4:hover{
+    background: url(img/HP/9box/Rbox3_hover_Lunafly.gif);
+    background-size: cover;   
+}
+
+.Rbox5:hover{
+    background: url(img/HP/9box/Rbox5_hover_jelly.gif);
+    background-size: cover;   
+}
+.Rbox6:hover{
+    background: url(img/HP/9box/Rbox6_hover_star.gif);
+    background-size: cover;   
+}
+.Rbox7:hover{
+    background: url(img/HP/9box/Rbox7_butterfly.gif);
+    background-size: cover;   
+}
+.Rbox8:hover{
+    background: url(img/HP/9box/Rbox8_geo.gif);
+    background-size: cover;   
+}
+.Rboxtext{
+    text-align: center;
+    color: snow;
+    font-size: 120%;
+}
+
+/*----9 boxes end----*/
+
+
+
+@media (max-width: 460px) {
+    body {   
+    
+    }
+    
+    .arrow-wrap{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+ 
+    
+    #bgvid { display: none; }
+    html{margin: 0;
+        padding: 0;}
+    nav {
+        
+    }
+    
+    .HPS1{
+    margin-top: 0%;
+    }
+    
+    .F1text .F2text .F3text{
+        padding: 5%;
+    }
+    
+    .header{-webkit-animation: none;}
+    
+    .linkOUT{
+        display: none;
+    }
+    
+    
+
+    
+    .subtitle{
+        padding: 0% 0% 4% 4%;
+    }
+    video{
+        position: absolute;
+        display: none;
+    }
+    
+    .HPb1{
+        float: left;
+        width: 100%;
+        height: 27.333%;
+        margin-top: 0%;
+        padding: 3%;
+        position: relative;
+    }
+    
+    .FPs1 .FPb1 .FPb1text{
+        font-size: 20pt;
+        width: 100%;
+    
+    }
+
+}

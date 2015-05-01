@@ -1,0 +1,169 @@
+@import "compass/css3";
+
+//mixins
+@mixin bp($bp, $min-max: min-width) {
+    $em: $bp/16;
+    @media(#{$min-max}: #{$em}em) {
+        @content;
+    }
+}
+
+.wrap {
+    background: #ecf0f1;
+    color: #fff;
+    display: block; 
+    height: 100%;
+    overflow-x: hidden;  
+    position: relative;
+    text-align: center; 
+    width: 100%; 
+    
+    header {
+        background: rgba(#fff, .5);
+        color: #222;
+        font-size: 1rem;
+        position: relative;
+        text-align: center;
+        z-index: 900;
+        
+        label {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 0.667em;
+            font-weight: bold;
+            line-height: 3rem; 
+            padding: 0 1em;
+
+            @include bp(555) {
+                font-size: 1em;
+            }
+
+            @include bp(1300) {
+                font-size: 1.15em;
+            }
+            
+            &:hover {
+                background: #fff;
+            }
+            
+            & + label {
+                margin-left: .25em;  
+                @include bp(500) {
+                    margin-left: 0em; 
+                } 
+                
+                @include bp(660) {
+                    margin-left: 2em; 
+                }
+            } 
+            
+            span {
+                display: none;
+                @include bp(400) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    
+    h1 {
+        font-size: 5.75vw;
+        margin: 1em 0;
+    }
+}
+
+input {
+    left: 0;
+    position: absolute; 
+    top: -1000%;
+}
+
+.section {
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    height: 100%;
+    left: 100%;
+    max-width: 100%;
+    padding: 3em 1em; 
+    position: absolute; 
+    text-align: center;
+    top: 0;  
+    vertical-align: top;
+    transition: left 0s .75s;
+    width: 100%;
+    z-index: 10;
+    
+    @include bp(460) {
+        padding: 3em;
+    }
+    
+    @include bp(700) {
+        padding: 3em;
+    }
+    
+    @include bp(1400) {
+        padding: 3em 6em; 
+    }
+    
+    @include bp(430, max-height) {
+        height: auto;
+    }
+    
+    &-one { 
+        background: #ecf0f1 url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/starryFarm.jpg') 50% 50%;
+        background-size: cover; 
+    }
+
+    &-two { 
+        background: #bdc3c7 url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/campusDarkDays.jpg') 50% 50%; 
+        background-size: cover;
+    }
+    
+    &-three { 
+        background: #e74c3c url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/autumn.jpg') 50% 50%; 
+        background-size: cover;
+    }
+
+    &-four { 
+        background: #bdc3c7 url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/65463/lakehouse.jpg') 50% 50%; 
+        background-size: cover;
+    }
+    
+    p {
+        text-align: left;
+        text-shadow: 1px 1px #000;
+         
+        @include bp(400) { 
+            -webkit-column-count: 2;
+            -webkit-column-gap: 20px;
+        }
+    }
+    
+    h1, p {
+        opacity: 0; 
+        position: relative;
+        top: 1em; 
+        transform: scale(.8);
+        transition: all .75s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all .75s cubic-bezier(0,1.2,.89,1.3) ;
+    }
+}
+
+input:checked + .section {
+    left: 0; 
+    transition: left .75s ease-in-out;
+    transition: left .75s cubic-bezier(0,1.2,.89,1.2);
+    z-index: 100;
+    
+    h1, p {
+        opacity: 1;
+        top: 0;
+        transform: scale(1);
+        transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .9s;
+        transition: all .75s cubic-bezier(0,1.2,.89,1.3) .9s;
+    }
+}
+
+
+
