@@ -32,6 +32,73 @@ body {
 }
 
 
+
+header.hidden{
+    background-color: rgba(0,0,0,0.8);
+    color: #078374;
+    display: table;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 200%;
+    height: 8vh;
+    position: fixed;
+    text-align: center;
+    -webkit-transition: 1s ease;
+    width: 100%;
+    z-index: 100;
+}
+.hidebutton{
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    right: 0px;
+    -webkit-transform:rotate(90deg);
+    -webkit-animation:HIDEcolor 6s infinite;
+    border-style: solid;
+    border-width: 0.7em 0.5em 0 0.5em;
+    border-color: orange transparent transparent transparent;
+    top: 7px;
+    right: -5px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    
+}
+
+header.hidden .shrunk{
+    width: 5%;
+    height: 10px;
+    opacity: 0.5;
+
+}
+
+
+/*----hide arrow animation----*/
+
+
+
+@-webkit-keyframes HIDEcolor {
+    0%  { 
+        border-color: #ff2524 transparent transparent transparent;
+    }    
+    25%{
+        border-color: orange transparent transparent transparent;
+    }
+    75%{
+        border-color: #0d7f77 transparent transparent transparent;
+    }
+    100% { 
+        border-color: #ff2524 transparent transparent transparent;
+    }
+  }
+/*----hide arrow animation end----*/
+
+
+
+
+
+
+
+
 .container {
     height: 100%;
     position: relative;
@@ -79,21 +146,150 @@ body {
 /*----logo higlight end----*/
 
 
-header {
-    background-color: rgba(0,0,0,0.8);
-    color: #078374;
-    display: table;
-    font-family: 'Philosopher', sans-serif;
-    font-size: 200%;
-    height: 8vh;
-    position: fixed;
-    text-align: center;
-    -webkit-transition: 1s ease;
-    -o-transition: 1s ease;
-    transition: 1s ease;
-    width: 100%;
-    z-index: 100;
+        
+
+
+
+
+/*----pop up subscribe----*/
+.subscribe{
+    cursor: pointer;
 }
+
+.blur-in {
+    -webkit-animation: blur 2s forwards;
+
+}
+
+.blur-out {
+    -webkit-animation: blur-out 2s forwards;
+
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        
+    }
+
+    100% {
+        -webkit-filter: blur(4px);
+       
+    }
+}
+
+@-webkit-keyframes blur-out {
+    0% {
+        -webkit-filter: blur(4px);
+
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+
+    }
+}
+
+
+.pop-up {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    letter-spacing: 0.1em;
+}
+
+.box {
+    background-color: rgba(0,0,0,0.85);
+    height: 370px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%;
+    position: relative;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+}
+
+
+
+input{
+    width: 30%;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    background: transparent;
+    border-style: solid;
+    border-width: 0px 0px 3px 3px;
+    border-color: #FFF ;
+    color: snow;
+    padding: 1%;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+
+
+.button {
+    margin-bottom: 33px;
+    font-family: "Ubuntu";
+    text-align: center;
+    font-size: 170%;
+}
+
+.button:hover {
+    border: solid 5px;
+    -webkit-animation: HIDEcolor 1s infinite;
+    transition: 0.5s ease;
+
+}
+
+.close-button {
+    transition: all 0.5s ease;
+    position: absolute;
+    padding: 1.5px 7px;
+    right: 3%;
+    margin-left: -10px;
+    margin-top: 10px;
+    color: #0c7e76;
+}
+
+.close-button:hover {
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Ubuntu";
+    color: #fff;
+    background-color: #ff2524;
+}
+
+.PUtext {
+    padding: 30px 65px 80px 65px;
+    color: snow;
+    font-family: "Ubuntu";
+}
+
+
+
+
+
+
+
+/*----pop up subscribe----*/
+
+
+
+
 
 section {
     color: transparent;
@@ -222,19 +418,18 @@ section {
     font-size: 50%;        
     color: #ff2524;
     background-size: contain;
-    font-family: proxima-nova, sans-serif;
+    font-family: "Ubuntu";
     font-weight: bolder;
     margin: 3% 0% 0% 8%;
     float: left;
     width: 15%;
     vertical-align: center;
+    cursor: pointer;
 
 }
 .nav:hover{
     
 }
-
-
 
 a{
     text-decoration: none;
@@ -437,13 +632,13 @@ a:active{
     padding: 10% 20% 2% 10%;
 }
 .FPdes{
-    font-size: 200%;
+    font-size: 140%;
     background: #ff2524;
-    padding-top: 1.6%;
+    padding-top: 1%;
     padding-left: 1%;
     position: fixed;
     z-index: 20;
-    height: 5%;
+    height: 3%;
     width: 75%;
     transition: opacity 0.5s ease;
 
@@ -530,18 +725,6 @@ a:active{
 
 }
 
-.HPS2vid{
-    position: fixed;
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -30;
-    top: 0;
-
-}
 
 .banner{
     width: 100%;        
@@ -593,14 +776,14 @@ a:active{
 }
 
 #bgvid {
-position: fixed;
-right: 0; 
-bottom: 0;
-min-width: 100%; 
-min-height: 100%;
-width: auto; 
-height: auto; 
-z-index: -1;
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1;
 
 }
 
@@ -674,13 +857,82 @@ z-index: -1;
 /*----RM animation end----*/
 
 
+
+/*----5 boxes----*/
+
+
+.FRboxall{
+
+}
+
+
+.FRboxtext{
+}
+
+.FRbox{
+    -webkit-transition: all 1s ease;
+    -webkit-filter: grayscale(100%);
+    -webkit-filter: brightness(10%);
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.FRbox:hover{
+    -webkit-filter: grayscale(0%);
+    -webkit-filter: brightness(100%);
+}
+
+
+.FRbox:hover .linkOUT{
+    background: #ff2524;
+    height: 30px;
+    color: snow;
+    overflow: hidden;
+    -webkit-animation: linkHI;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    left: 0;
+
+}
+
+.FRbox1{
+    background: url(img/HP/5box/tumblr_nnqqnm1Tgv1qas1mto10_1280.jpg);
+    background-size: cover;
+}
+
+.FRbox2{
+    background: url(img/HP/5box/tumblr_nnsk21eb5p1qas1mto1_1280.jpg);
+    background-size: cover;
+}
+
+.FRbox3{
+    background: url(img/HP/5box/tumblr_nmjtyu7Ze91rv33k2o1_500.jpg);
+    background-size: cover;
+}
+
+.FRbox4{
+    background: url(img/HP/5box/tumblr_nnp4rt1zZp1rv33k2o4_540.jpg);
+    background-size: cover;
+}
+
+.FRbox5{
+    background: url(img/HP/5box/tumblr_nlzriswLfD1rv33k2o8_540.jpg);
+    background-size: cover;
+}
+
+
+/*----5 boxes end----*/
+
+
+
+
 /*----9 boxes----*/
 
 .HPReview{
     position: relative;
     z-index: 20;
-    width: 100%;
-    height: 50.3%;
+
 
 }
 
@@ -695,8 +947,22 @@ z-index: -1;
     
 }
 
+
+#APvid{
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -30;
+
+}
+
+
 .RboxAll{
-    width: 28.3%;
+    min-width: 28.3%;
     height: 200px;
     float: left;
     padding: 2.5%;
@@ -755,7 +1021,7 @@ z-index: -1;
 
 
 
-@media (max-width: 460px) {
+@media (max-width: 520px) {
     body {   
     
     }
@@ -794,11 +1060,12 @@ z-index: -1;
     .subtitle{
         padding: 0% 0% 4% 4%;
     }
-    video{
+
+    /*video{
         position: absolute;
         display: none;
     }
-    
+    */
     .HPb1{
         float: left;
         width: 100%;
