@@ -1,5 +1,5 @@
  $(document).ready(function () {
-            $('.flag').waypoint(function (direction) {
+            $('section').waypoint(function (direction) {
                 if (direction == 'down') {
                     $('header').css("height", "10px");
                     $('.logo').css("width", "6vh");
@@ -74,23 +74,73 @@
             }
         ) 
 
+
+    
+
           
+          
+
+          
+$(document).scroll(function() {
+
+  var y = $(this).scrollTop();
+    
+    
+  if ( y < 200 ) {
+    $('.INTb2text').css("opacity","0");
+
+  }
+  if ( y > 100 ) {
+    $('.INTb2').fadeIn();
+  }    
+  if( y > 200) {
+        $('#RD').css("opacity", "1");
+        $('#RD1').text("is an online magazine that prides its essence in the verbal, visual, contextual redefinitions of the arts.");
+          $('.INTb2text').css("position","fixed");
+    }
+  if ( y > 600) {
+    $('.INTb2text').css("opacity","1");
+  }
+  if ( y > 1000) {
+    $('#RD1').text("is an understatement on the arcane");
+  }
+  if ( y > 1400) {
+    $('#RD1').text("plays down on secrets, a level below the Façade");
+  }
+  if ( y > 1800) {
+    $('#RD1').text("hover to explore beneath the surface");
+  }
+  if ( 2400> y > 2200) {
+    $('.INTb2text').css("position","relative");
+    $('.INTb2').fadeOut();
+    }
+});
+
           
 /*----scroll disappear----*/          
          $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
-        $('.FPscroll').stop().animate(
-        {opacity: (( 180-scroll )/100)+0.1},
-        "slow"
-        );
+            $('.HPscroll').stop().animate(
+            {opacity: (( 180-scroll )/100)+3},
+            "slow"
+            );
+            $('.FPscroll').stop().animate(
+            {opacity: (( 180-scroll )/100)+0.1},
+            "slow"
+            );
         })
+         
+         
+         
+
 /*----scroll disappear end----*/ 
          
        
         $(function(){
-            $('hidebutton').click(function(){
-                $('header.hidden').toggleClass('.shrunk');
-            
+            $('.hidebutton').click(function(){
+                $('header.hidden').toggleClass('shrunk');
+                $('nav.hidden').toggleClass('shrunk');
+                $('.hidebutton.hidden').toggleClass('shrunk');
             })
         
         })
