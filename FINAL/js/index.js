@@ -99,8 +99,8 @@
         ) 
           
 
-
-     $(function(){
+$(window).load(function(){
+        $(function(){
             $('.hidebutton').click(function(){
                 $('header.hidden').toggleClass('shrunk');
                 $('nav.hidden').toggleClass('shrunk');
@@ -109,14 +109,22 @@
         
         });
 
-           $(function(){
+        $(function(){
             $('.Mlogo').not("a[href='#']").click(function(e){
                 $('.OMNAV').toggleClass('sidenav');
                 e.stopPropagation();
 
             })
+            
+            $('.Nclose-button').click(function (e) { 
+                    $('.OMNAV').toggleClass('sidenav');
+                    e.stopPropagation();
+                })
         
         });
+})
+     
+                
           
 
           

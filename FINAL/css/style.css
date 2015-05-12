@@ -300,7 +300,7 @@ input:focus {
 
 }
 
-.close-button {
+.close-button{
     transition: all 0.5s ease;
     position: absolute;
     padding: 1.5px 7px;
@@ -310,6 +310,15 @@ input:focus {
     color: #0c7e76;
 }
 
+.Nclose-button{
+    transition: all 0.5s ease;
+    position: absolute;
+    padding: 1.5px 7px;
+    right: 3%;
+    margin-left: -10px;
+    margin-top: 10px;
+    color: #0c7e76;
+}
 .close-button:hover {
     color: #fff;
 }
