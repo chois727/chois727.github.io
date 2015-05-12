@@ -246,7 +246,7 @@ header.shrunk{
     margin: auto;
     left: 0;
     right: 0;
-    z-index: 40;
+    z-index: 90;
     letter-spacing: 0.1em;
 }
 
@@ -1553,6 +1553,7 @@ a:active{
      }   
 
     .TMsub{
+        display: block;
         margin-top: -68px;
     }
     .row{
@@ -1718,7 +1719,7 @@ a:active{
         width: 60%;
         background: rgba(0,0,0,0.9);
         position: fixed;
-        z-index: 100;
+        z-index: 80;
     }
     .Mnav{
         color: orange;
@@ -1757,10 +1758,10 @@ a:active{
     .Mlogo{
     margin: 1% 0% 1% 1%;
     font-family: 'Philosopher', sans-serif;
-    height: 10vh;
+    height: 8vh;
     background: url(img/LOGO-small.png) no-repeat;
     background-size: contain;
-    width: 10vh;
+    width: 8vh;
     float: left;
     position: fixed;
     z-index: 100;
