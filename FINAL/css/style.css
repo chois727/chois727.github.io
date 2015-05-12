@@ -90,6 +90,14 @@ header.shrunk{
 
 }
 
+/*----hide mobile header----*/
+
+.MOBHead{
+    display: none;
+}
+
+/*----hide mobile header end----*/
+
 
 /*----hide arrow animation----*/
 
@@ -112,7 +120,14 @@ header.shrunk{
 /*----hide arrow animation end----*/
 
 
+.Acontainer {
+    height: 100%;
+    position: relative;
+    top: 6vh;
+    width: 100%;
 
+
+}
 
 
 
@@ -315,14 +330,21 @@ h3 {
 }
 
 
+#success{
+    color: snow;
 
+}
 
 
 
 
 /*----pop up subscribe----*/
+/*----TM subscribe----*/
 
-
+.TMsub{
+    display: none;
+}
+/*----TM subscribe----*/
 
 
 
@@ -762,6 +784,38 @@ a:active{
 
 /*----link highlight effect end----*/
 
+.BANb1{
+    font-size: 250%;
+}
+
+
+.MPs1{
+    color: snow;
+    position: relative;
+    height: 1000px;
+    z-index: 0;
+    padding: 10% 20% 2% 10%;
+}
+.MPs2{
+    background: rgba(0,0,0,0.8);
+    padding-bottom: 15%;
+    margin-bottom: 42%;
+
+}
+
+.Mquote{
+    font-size: 200%;
+    color: rgba(256,256,256,0.6);
+    font-style: italic;
+    line-height: 1.4em;
+
+}
+.MPscroll{
+    top: 47%;
+
+}
+
+
 .BtHP{
     width: 100%;
     height: 20px;
@@ -782,12 +836,28 @@ a:active{
     left: 10%;
     position: relative;
     z-index: 2;
-    height: 20%;
+    height: 15%;
     width: 75%;
     transition: opacity 0.5s ease;
 
 
 }
+
+.HPbandes{
+    font-size: 70%;
+    background: #ff2524;
+    padding: 1%;
+    top: 250px;
+    left: 10%;
+    position: relative;
+    z-index: 2;
+    height: 15%;
+    width: 75%;
+    transition: opacity 0.5s ease;
+
+
+}
+
 
 .FPs1{
     color: snow;
@@ -818,6 +888,8 @@ a:active{
     font-size: 700%;
     margin-top: 10%;
     padding-bottom: 0%;
+    line-height: 0.5em;
+
 }
 .FPb1text{
     color: snow;
@@ -938,7 +1010,8 @@ a:active{
 }
 .title{
     margin-top: -30px;
-    
+    padding: 0% 0% 0% 10%;
+
 }
 
 .HPheadtext{
@@ -1036,17 +1109,20 @@ a:active{
 
 
 .FRboxall{
+    position: relative;
+    z-index: 40;
 
 }
 
 
 .FRboxtext{
+    padding-top: 3%;
 }
 
 .FRbox{
     -webkit-transition: all 1s ease;
     -webkit-filter: grayscale(100%);
-    -webkit-filter: brightness(10%);
+    -webkit-filter: brightness(40%);
     width: 20%;
     height: 300px;
     float: left;
@@ -1055,6 +1131,8 @@ a:active{
 .FRbox:hover{
     -webkit-filter: grayscale(0%);
     -webkit-filter: brightness(100%);
+    text-align: center;
+    padding-top: 1%;
 }
 
 
@@ -1071,13 +1149,14 @@ a:active{
 }
 
 .FRbox1{
-    background: url(img/HP/5box/tumblr_nnqqnm1Tgv1qas1mto10_1280.jpg);
+    background: url(img/HP/5box/20121207_seoulbeats_nell.jpg) 50%;
     background-size: cover;
 }
 
 .FRbox2{
-    background: url(img/HP/5box/tumblr_nnsk21eb5p1qas1mto1_1280.jpg);
-    background-size: cover;
+    background: url(img/HP/5box/2ne1-eab7b8eba6acec9b8ced95b4ec9a94-missing-you-m_v-3012.jpg) 80% 50%;
+    background-size: 240%;
+    cursor: pointer;
 }
 
 .FRbox3{
@@ -1091,14 +1170,47 @@ a:active{
 }
 
 .FRbox5{
-    background: url(img/HP/5box/tumblr_nlzriswLfD1rv33k2o8_540.jpg);
+    background: url(img/HP/5box/1420793401_r678x0.jpg);
     background-size: cover;
 }
 
-
+.FRbox6{
+    display: none;
+}
 /*----5 boxes end----*/
 
 
+/*----3BOXES----*/
+.Aboxtext{
+    color: snow;
+    font-size: 150%;
+}
+.AboxAll{
+    padding: 10%;
+    cursor: pointer;
+
+}
+
+.AboxAll:hover{
+    border: solid 5px;
+    -webkit-animation: HIDEcolor 1s infinite;
+    transition: 0.5s ease;
+}
+.Abox1{
+    background: url(img/AP/scenery.png) 50% 70%;
+    background-size: cover;
+}
+
+.Abox2{
+    background: url(img/AP/2NE1.jpg) 50% 90%;
+    background-size: cover;
+}
+
+.Abox3{
+    background: url(img/AP/original.jpg) 50% 60%;
+    background-size: cover;
+}
+/*----3BOXES END----*/
 
 
 /*----9 boxes----*/
@@ -1106,6 +1218,7 @@ a:active{
 .HPReview{
     position: relative;
     z-index: 20;
+
 
 
 }
@@ -1134,29 +1247,84 @@ a:active{
 
 }
 
+.audio{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 200px;
+    z-index: 30;
+    color: snow;
+    cursor: pointer;
+}
+.NVID{
+
+}
+
+#mute-video{
+    position: fixed;
+    z-index: 40;
+    top:14%;
+    right: 10%;
+    border: none 0px;
+    background: transparent;
+    color: snow;
+    cursor: pointer;
+    font-family: "Ubuntu";
+    font-size: 120%;
+    font-style: italic;
+
+}
+
+#mute-video:hover{
+    border: solid 5px;
+    -webkit-animation: HIDEcolor 1s infinite;
+    transition: 0.5s ease;
+}
+
 
 .RboxAll{
-    min-width: 28.3%;
+    width: 25.3%;
     height: 200px;
     float: left;
     padding: 2.5%;
-    margin: 0%;
+    margin: 0% 1% 0% 1.5%;
     background: transparent;
+    cursor: pointer;
+
     
 }
+#NELL{
+    position: fixed;
+    z-index: 40;
+    bottom: 26%;
+    right: 10%;
+    border: none 0px;
+    background: transparent;
+    color: snow;
+    cursor: pointer;
+    font-family: "Ubuntu";
+    font-size: 120%;
+    font-style: italic;
 
+}
 .RboxAll:hover{
+    border: solid 5px;
+    -webkit-animation: HIDEcolor 1s infinite;
+    transition: 0.5s ease;
+
+}
+
 }
 .Rbox1 .Rbox2 .Rbox3 .Rbox4 .Rbox5 .Rbox6 .Rbox7 .Rbox8 .Rbox9{
     color: transparent;
 }
 
 .Rbox1:hover{
-    background: url(img/HP/9box/Rbox1_hover_Shine.gif);
+    background: url(img/HP/9box/Rbox1_hover_Shine.gif) 50%;
     background-size: cover;
 }
 .Rbox2:hover{
-    background: url(img/HP/9box/Rbox1_hover_Shine.gif);
+    background: url(img/HP/9box/Rbox5_hover_jelly.gif);
     background-size: cover;   
 }
 .Rbox3:hover{
@@ -1165,16 +1333,16 @@ a:active{
 }
 
 .Rbox4:hover{
-    background: url(img/HP/9box/Rbox3_hover_Lunafly.gif);
+    background: url(img/HP/9box/Rbox9_fly.gif);
     background-size: cover;   
 }
 
 .Rbox5:hover{
-    background: url(img/HP/9box/Rbox5_hover_jelly.gif);
+    background: url(img/HP/9box/);
     background-size: cover;   
 }
 .Rbox6:hover{
-    background: url(img/HP/9box/Rbox6_hover_star.gif);
+    background: url(img/HP/9box/Rbox6_hover_star.gif) 50%;
     background-size: cover;   
 }
 .Rbox7:hover{
@@ -1182,7 +1350,7 @@ a:active{
     background-size: cover;   
 }
 .Rbox8:hover{
-    background: url(img/HP/9box/Rbox8_geo.gif);
+    background: url(img/HP/9box/Rbox8_geo.gif) 50%;
     background-size: cover;   
 }
 .Rboxtext{
@@ -1196,13 +1364,14 @@ a:active{
 /*----social media icons--*/
 
 .footer{
-    background: black;
+    background: transparent;
     height: 200px;
     padding: 1%;
     bottom: 0;
     opacity: 0.9;
     position: relative;
-    z-index: 1;
+    z-index: 60;
+    margin-top: 5%;
 }
 
 .ICON{
@@ -1211,26 +1380,246 @@ a:active{
     width: 500px;
     height: 80px;
     bottom: 20%;
-    margin: 0% 0%;
+    margin: 0% 10% 0% 0%;
     float: right;
     clear: both;
     color: transparent;
 }
 
 #CON{
-    font-size: 150%;
+    font-size: 120%;
     opacity: 0.8;
     font-family: "ubuntu";
     padding: 3% 0% 0% 5%;
+    margin-right: 10%;
     bottom: 0%;
     float: right;
 
 }
 /*----social media icons end--*/
 
-@media (max-width: 520px) {
+
+/*----tablet----*/
+
+@media(max-width: 800px){ 
     body {   
+    }
     
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav{
+        width: 13%;
+    }
+    .hidebutton{
+        display:none;
+    }
+    
+    .HPintro{
+        font-size: 30pt;
+    }
+    .INTb2text{
+        display:none;
+    }
+    .HPdes{
+        height: 60px;
+        top: 160px; 
+    
+    }
+    .FPb1{
+        font-size: 60px;
+    }
+    
+    
+    .FLO{
+        color: snow;
+        font-size: 40%;
+        clear: both;
+        text-align: center;
+        bottom: 0px;
+
+
+    }
+
+    
+    .HPb1{
+        margin: 0%;
+    }
+    .HPb1:hover{
+        border: solid 5px;
+        -webkit-animation: HIDEcolor 1s infinite;
+        transition: 0.5s ease;
+    }
+    .INTb2{
+        display: none;
+        height:0px;
+    }
+    .F1text .F2text .F3text{
+        padding: 5%;
+    }
+  
+    .header{-webkit-animation: none;}
+    .FLO{
+        left: -5%;
+        background: transparent;
+    }
+
+    .linkOUT{
+        -webkit-animation: none;
+        background: transparent;
+    }
+    .linkOUT:hover{
+        -webkit-animation: none;
+        background: transparent;
+    }
+    
+    .hoverlink{
+        background: transparent;
+    
+    }
+    .hoverlink:hover{
+        -webkit-animation: none;
+    }
+    
+    .subtitle{
+        display: none;
+    }
+    
+    .HPb1:hover .linkOUT, .hoverlink:hover .linkOUT, .hoverlinkINT:hover .linkOUT, .hoverlink:hover .PinkTape{
+     -webkit-animation: none;
+        background: transparent;
+        padding: 2%;
+    
+    }
+    
+    .PinkTape{
+      border: solid 5px;
+      -webkit-animation: HIDEcolor 1s infinite;
+      transition: 0.5s ease;    
+      padding: 2% 2% 0.5% 2%;
+      font-size: 20pt;
+    }
+    
+    .HPb1{
+     color: snow;
+    }
+    
+    .subtitle{
+        padding: 0% 0% 4% 4%;
+    }
+
+    .HPb1{
+        float: left;
+        width: 100%;
+        height: 27.333%;
+        margin-top: 0%;
+        padding: 3%;
+        position: relative;
+    }
+    
+    .HPb1:hover{
+        
+    }
+    
+    .FPs1 .FPb1 .FPb1text{
+        font-size: 20pt;
+        width: 100%;
+    
+    }
+    
+    #F1:hover .FLO, #F2:hover .FLO, #F3:hover .FLO{
+        background: transparent;
+        font-size: 20pt;
+        left: -30px;
+    }
+    
+    .FPs2{
+        margin-bottom: 30px;
+        
+    }
+    .FRbox{
+        top: 100px;
+        width: 50%;
+        height: 100px;
+        margin: 0%;
+        position: relative;
+    }
+    
+     .FRbox:hover{
+         padding-top: 0%;
+     
+     }   
+
+    .TMsub{
+        margin-top: -68px;
+    }
+    .row{
+    
+    }
+    .FRboxall{
+        height: 400px;
+        position: relative;
+        margin: 0%;
+    
+    }
+    .FRboxtext{
+        padding: 0% 0% 0% 2%;   
+    }
+    
+    .FRbox6{
+        display:inline-block;
+        color: snow;
+        background: url(img/HP/9box/TVstatic.gif);
+        background-size: 1050px 610px;
+           
+    }
+    .FRbox6:hover{
+        background: url(img/HP/9box/TVstatic.gif);
+        background-size: 1050px 610px;
+    
+    }
+    .FRbox6:hover #SSCR{
+        background: #ff2524;
+    
+    }
+    #SSCR{
+        font-size: 400%;
+    
+    }
+    #mute-video{
+        font-size: 14pt;
+        right: 2%;
+    
+    }
+    .RboxAll{
+        clear: both;
+        width: 100%;
+        
+    }
+    #NELL{
+        font-size: 14pt;
+        right: 2%;
+        top: 21%;
+        padding-top: 0px;
+        margin: 0px;
+        position: fixed;
+        z-index: 40;
+        bottom: auto;
+    
+    
+    }
+    
+    .hoverlinkINT:hover .EWAN{
+        -webkit-animation: none;
+    }
+    .EWAN{
+        font-size: 25px;
+        padding-left: 70px;
+    }
+    .subtitle{
+        display: none;
     }
     
     .arrow-wrap{
@@ -1238,31 +1627,227 @@ a:active{
         height: 0px;
         opacity: 0;
     }
+    .AboxAll{
+        height: 200px;
+    
+    }
+    .FPb1{
+        font-size: 90px;
+        line-height: 1em;
+    }
+    
+    .FPb1text{
+        font-size: 50px;
+        line-height: 1em;
+        padding-top: 60px;
+    }
+    
+    .HPbanner1{
+        margin-bottom: 40%;
+    }
+    .FPdes{
+        font-size: 13pt;
+    }
+
+    .TMsub{
+    display: block;
+    }
+    
+    .footer{
+        background: transparent;
+        height: 150px;
+        padding: 1%;
+        bottom: 50px;
+        opacity: 0.9;
+        position: relative;
+        z-index: 60;
+        margin-top: 5%;
+    }
+
+    .ICON{
+        background: url(img/icon/icons1.svg);
+        background-size: cover;
+        width: 300px;
+        height: 60px;
+        bottom: 20%;
+        margin: 0% 10% 0% 0%;
+        float: right;
+        clear: both;
+        color: transparent;
+    }
+
+}
+
+
+
+/*----mobile----*/
+@media (max-width: 520px) {
+    body {   
+        -webkit-animation: none;
+
+    }
+    body:hover{ 
+        -webkit-animation: none;
+    }
+    .arrow-wrap{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
  
     
-    #bgvid { display: none; }
-    html{margin: 0;
-        padding: 0;}
-    nav {
-        
+    html{
+        margin: 0;
+        padding: 0;
     }
     
-    .HPS1{
-    margin-top: 0%;
+    /*----hide web header/ show mobile header----*/
+    
+    .MOBHead{
+        display: block;
+        margin: 0;
     }
     
+    .WEBHead{
+        display: none;
+        opacity: 0;
+    
+    }
+    .MOBNAV{
+        margin-top: 80px;
+        width: 60%;
+        background: rgba(0,0,0,0.9);
+        position: fixed;
+        z-index: 100;
+    }
+    .Mnav{
+        color: orange;
+        width: 60%;
+        height: 60px;
+        padding: 7% 2% 2% 2%;
+        text-align: center;
+        font-size: 120%;
+        font-family: "Ubuntu";
+        font-weight: bolder;
+    
+    }
+    
+    .OMNAV{
+        left: -1000px;
+        position: fixed;
+        -webkit-transition: 1s ease;
+
+    }
+    
+    .OMNAV.sidenav{
+        left: 000px;
+        position: fixed;
+        -webkit-transition: 1s ease;
+    }
+    .Msubscribe{
+        color: #ff2524;
+    }
+    
+   .Mlogo:hover{
+        border: solid 5px;
+      -webkit-animation: HIDEcolor 1s infinite;
+      transition: 0.5s ease;
+   }
+    
+    .Mlogo{
+    margin: 1% 0% 1% 1%;
+    font-family: 'Philosopher', sans-serif;
+    height: 10vh;
+    background: url(img/LOGO-small.png) no-repeat;
+    background-size: contain;
+    width: 10vh;
+    float: left;
+    position: fixed;
+    z-index: 100;
+    }
+    
+    /*----hide web header/ show mobile header----*/
+
+   
+    .hidebutton{
+        display:none;
+    }
+    .mobilemini{
+        display: none;
+    }
+    .HPintro{
+        display:none;
+    }
+    .INTb2text{
+        display:none;
+    }
+    
+    .FPb1{
+        font-size: 60px;
+    }
+    .HPb1{
+        margin: 0%;
+    }
+    .HPb1:hover{
+
+    }
+    .INTb2{
+        display: none;
+        height:0px;
+    }
     .F1text .F2text .F3text{
         padding: 5%;
     }
-    
-    .header{-webkit-animation: none;}
-    
+    .hoverlink .FLO{
+     background: transparent;
+    }
     .linkOUT{
-        display: none;
+        background: transparent;
+    
+    }
+    .HPb1:hover .linkOUT, .hoverlink:hover .linkOUT, .hoverlinkINT:hover .linkOUT, .hoverlink:hover .PinkTape{
+     -webkit-animation: none;
+        background: transparent;
+        padding: 2% 2% 0.5% 2%;
+    
+    }
+    
+    .PinkTape{
+      border: solid 0;
+      -webkit-animation: HIDEcolor 1s infinite;
+      transition: 0.5s ease;    
+      padding: 3%;
+      font-size: 20pt;
+      background: #FF2524;
+      line-height: 1em;
+    }
+    
+    .FLO{
+        left: -5%;
+    }
+
+    .linkOUT{
+        -webkit-animation: none;
+        background: #ff2524;
+    }
+    .linkOUT:hover{
+        -webkit-animation: none;
+    }
+     .hoverlink:hover{
+        -webkit-animation: none;
     }
     
     
-
+    .HPb1:hover .linkOUT, .hoverlink:hover .linkOUT, .hoverlinkINT:hover .linkOUT{
+     -webkit-animation: none;
+    
+    }
+    
+    
+    
+    .HPb1{
+     color: snow;
+    }
     
     .subtitle{
         padding: 0% 0% 4% 4%;
@@ -1286,6 +1871,104 @@ a:active{
         font-size: 20pt;
         width: 100%;
     
+    }
+    
+    .FPs2{
+        margin-bottom: 30px;
+        
+    }
+    .FRbox{
+        clear: both;
+        width: 100%;
+        
+    
+    }
+    
+    .FRbox:hover .linkOUT, .FRbox:hover .FRboxtext{
+        background: #ff2524;
+        height: 30px;
+        color: snow;
+        overflow: hidden;
+        -webkit-animation: none;
+        text-align: left;
+
+    }
+    .FRbox6:hover{
+        background:#ff2524;
+        height: 150px;
+        
+    }
+    #mute-video{
+        font-size: 14pt;
+        right: 2%;
+    
+    }
+    .RboxAll{
+        clear: both;
+        width: 100%;
+        
+    }
+    #NELL{
+        font-size: 14pt;
+        right: 2%;
+        top: 21%;
+        padding-top: 0px;
+        margin: 0px;
+        position: fixed;
+        z-index: 40;
+        bottom: auto;
+    
+    
+    }
+    .AboxAll{
+        height: 200px;
+    
+    }
+    .FPb1{
+        font-size: 90px;
+        line-height: 1em;
+    }
+    
+    .FPb1text{
+        font-size: 50px;
+        line-height: 1em;
+        padding-top: 60px;
+    }
+    
+    .HPbanner1{
+        margin-bottom: 40%;
+    }
+    .FPdes{
+        font-size: 13pt;
+    }
+
+    .TMsub{
+    display: block;
+    position: relative;
+    margin-top: 350px;
+    }
+    
+    .footer{
+        background: transparent;
+        height: 150px;
+        padding: 1%;
+        bottom: 0px;
+        opacity: 0.9;
+        position: relative;
+        z-index: 60;
+        margin-top: 5%;
+    }
+
+    .ICON{
+        background: url(img/icon/icons1.svg);
+        background-size: cover;
+        width: 300px;
+        height: 70px;
+        bottom: 20%;
+        margin: 0% 10% 0% 0%;
+        float: right;
+        clear: both;
+        color: transparent;
     }
 
 }

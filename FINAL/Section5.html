@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>MusicVidReview</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div class="wrap">
+    
+        
+
+<!---- footer disabled
+<footer class="DISCLAIMER">This website is a mock up for a school project. No copyright infringement intended.</footer>
+    
+-->
+    
+    
+    <div id="ajaxcontainer">
+
+    
+    
+    
+        
+
+             <div class="container" id="overlay">
+                 
+            <section>
+                <div class="text-vcenter MPs1">
+                    <div class="FPb1">Missing You</div>
+                    <div class="FPb1text">2NE1 <br /> </div>
+                    <div class="FPdes HPscroll MPscroll">MV Review</div>
+                </div>
+                
+                
+
+               <button id="mute-video">Play Audio</button>
+                <button class="YTLink" id="NELL"><a href="https://www.youtube.com/watch?v=AG0jlKdB1s0" target="_blank">Watch on <br />Youtube</a></button>
+                <div class="NVID">
+                <video autoplay loop poster="css/img/water-beach_00403938_blend.png" id="bgvid">
+                    <source src="css/vid/2NE1_MISSING_YOU.mp4" type="video/mp4">
+                </video> 
+                </div>
+
+  
+                   
+                    
+            </section>
+            <section class="flag">
+                <div class="text-vcenter2 MPs2">
+                    <div class="FPs2text">
+                        <div class="Mquote">
+                            "Don’t be so comfortable like that<br />
+                            Because we’re still strangers"<br />
+                        </div>
+                        <br />
+                           
+                            Don’t rush me like a child<br />
+                            Because it haven’t started yet<br />
+                            <br />
+                            I dont like the youth’s love like playing with fire<br />
+                            <br />
+                            I’m just shaking a bit, but I’m okay<br />
+                            No, the truth is<br />
+                            <br />
+                            I still hate you, you who left me<br />
+                            My cold heart is still<br />
+                            <br />
+                            Missing you<br />
+                            Missing you<br />
+                            Missing you<br />
+                            <br />
+                            Missing you<br />
+                            Missing you<br />
+                            <br />
+                            Don’t be so bright like that<br />
+                            Because the world is dark<br />
+                            <br />
+                            How can I smile brightly (what?)<br />
+                            If you’ll look closely, I am sad<br />
+                            I know I’ve been there before<br />
+                            <br />
+                            I dont like the calculative love of adults<br />
+                            I’m just tired but i’m okay<br />
+                            No, the truth is<br />
+                            <br />
+                            I still hate you, you who left me<br />
+                            My cold heart is still<br />
+                            <br />
+                            Missing you<br />
+                            Missing you<br />
+                            Missing you<br />
+                            <br />
+                            Missing you<br />
+                            Missing you<br />
+                            <br />
+                            The love of my young days is ending like this<br />
+                            You have to be happy<br />
+                            Even if a long time passes by, we’ll still remember each other<br />
+                            Those times when there was still “us”<br />
+                            <br />
+                            Those times when there was still “us”<br />
+
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="FPs3">
+        
+            </div>
+        
+        
+        </div>
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>         
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js'></script>
+        <script src="js/index.js"></script>
+        <script>
+          $("video").prop('muted', true);
+
+          $("#mute-video").click( function (){
+            if( $("video").prop('muted') ) {
+                  $("video").prop('muted', false);
+                $("#mute-video").text('Mute Audio');
+
+            } else {
+              $("video").prop('muted', true);
+            $("#mute-video").text('Play Audio');
+            }
+          });
+        </script>
+        
+    
+    
+    </div>
+    
+    
+</div>
+
+    
+    
+    
+    
+    
+    
+   
+
+</body>
+
+</html>

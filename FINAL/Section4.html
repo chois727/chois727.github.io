@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>MusicVidReview</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div class="wrap">
+    
+        
+
+<!---- footer disabled
+<footer class="DISCLAIMER">This website is a mock up for a school project. No copyright infringement intended.</footer>
+    
+-->
+    
+    
+    <div id="ajaxcontainer">
+
+    
+    
+    
+        
+
+             <div class="container" id="overlay">
+                 
+            <section>
+                <div class="text-vcenter MPs1">
+                    <div class="FPb1">The Day Before</div>
+                    <div class="FPb1text">Nell <br /> </div>
+                    <div class="FPdes HPscroll MPscroll">MV Review</div>
+                </div>
+                
+                
+
+               <button id="mute-video">Play Audio</button>
+                <button class="YTLink" id="NELL"><a href="https://www.youtube.com/watch?v=a6AzbOupbxk" target="_blank">Watch on <br />Youtube</a></button>
+                <div class="NVID">
+                <video autoplay loop poster="css/img/water-beach_00403938_blend.png" id="bgvid">
+                    <source src="css/vid/NELL_THE_DAY_AFTER.mp4" type="video/mp4">
+                </video> 
+                </div>
+
+  
+                   
+                    
+            </section>
+            <section class="flag">
+                <div class="text-vcenter2 MPs2">
+                    <div class="FPs2text">
+                        <div class="Mquote">
+                            "It was difficult at first <br />
+                            More than I will admit" <br />
+                        </div>
+                        <br />
+                            
+                            It was burdensome <br />
+                            But after accepting it, <br />
+                            it makes me too sorrowful. <br />
+                            <br />
+                            Honestly, this is the truth<br />
+                            There is no use in trying to hold on to the scattered pieces<br />
+                            It will only break my heart<br />
+                            But as I continue living like this,<br />
+                            I wonder what the point of living is<br />
+                            <br />
+                            I was resentful at first<br />
+                            And crying – I cried a lot<br />
+                            But after continuing on in this way<br />
+                            I wondered what I was doing<br />   
+                            <br />
+                            Honestly, this is the truth<br />
+                            There is no use in trying to hold on to the scattered pieces<br />
+                            It will only break my heart<br />
+                            But as I continue living like this,<br />
+                            I wonder what the point of living is<br />
+                            <br />
+                            Sometimes, I standing inside the same memory with you<br />
+                            I’m frozen in time with you<br />
+                            <br />
+                            How is the separation?<br />
+                            Was it just enough for you to endure, since you were prepared for it?<br />
+                            Was it less painful?<br />
+                            What about love?<br />
+                            Is it worth doing again?<br />
+                            Honestly, this is my truth<br />
+                            I’m just afraid<br />
+                            <br />
+                            This is all that I can say<br />
+                            I repeat it to myself, the words that let you go<br />
+                            They will never be able to reach you, the words that let you go<br />
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="FPs3">
+        
+            </div>
+        
+        
+        </div>
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>         
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js'></script>
+        <script src="js/index.js"></script>
+        <script>
+          $("video").prop('muted', true);
+
+          $("#mute-video").click( function (){
+            if( $("video").prop('muted') ) {
+                  $("video").prop('muted', false);
+                $("#mute-video").text('Mute Audio');
+
+            } else {
+              $("video").prop('muted', true);
+            $("#mute-video").text('Play Audio');
+            }
+          });
+        </script>
+        
+    
+    
+    </div>
+    
+    
+</div>
+
+    
+    
+    
+    
+    
+    
+   
+
+</body>
+
+</html>

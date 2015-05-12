@@ -74,10 +74,49 @@
             }
         ) 
 
-
-    
+          $("#ajaxrequestMV1").click(function(){
+            requestFile("Section4.html");
+            }
+        ) 
 
           
+          $("#ajaxrequestMV2").click(function(){
+            requestFile("Section5.html");
+            }
+        ) 
+           
+           $("#ajaxrequestF").click(function(){
+            requestFile("Section1.html");
+            }
+        ) 
+           $("#ajaxrequestR").click(function(){
+            requestFile("Section2.html");
+            }
+        ) 
+           $("#ajaxrequestA").click(function(){
+            requestFile("Section3.html");
+            }
+        ) 
+          
+
+
+     $(function(){
+            $('.hidebutton').click(function(){
+                $('header.hidden').toggleClass('shrunk');
+                $('nav.hidden').toggleClass('shrunk');
+                $('.hidebutton.hidden').toggleClass('shrunk');
+            })
+        
+        });
+
+           $(function(){
+            $('.Mlogo').not("a[href='#']").click(function(e){
+                $('.OMNAV').toggleClass('sidenav');
+                e.stopPropagation();
+
+            })
+        
+        });
           
 
           
@@ -133,17 +172,34 @@ $(document).scroll(function() {
          
          
 
-/*----scroll disappear end----*/ 
+/*----scroll disappear end----*/
          
-       
-        $(function(){
-            $('.hidebutton').click(function(){
-                $('header.hidden').toggleClass('shrunk');
-                $('nav.hidden').toggleClass('shrunk');
-                $('.hidebutton.hidden').toggleClass('shrunk');
-            })
+/*----JSON----*/ 
+
+         $(function() {
         
-        })
+        function requestFile(url){
+            $.ajax(
+                {
+                    url: url,
+                    cache: false,
+                    dataType: "json",
+                    success: function(data){
+                        $("#success").html( data.SUBSUC );
+                    }
+                }
+            );
+                
+        }
+        $("#SUBJS").click(function(){
+            requestFile("data.json");
+            }
+        )
+})
+     
+       
+       
+/*----JSON end----*/
         
         
                 $('.pop-up').hide();

@@ -13,7 +13,7 @@
 
 <body>
 <div class="wrap">
-      <header class="hidden">
+      <header class="hidden WEBHead">
           <center /> 
        
         <a href="Homepage.html">
@@ -21,7 +21,7 @@
                 </div> 
         </a>
           <nav class="hidden">
-            <div class="nav NAV1 nav-wo" id="ajaxrequest1">
+            <div class="nav nav-wo" id="ajaxrequest1">
                 <a href="#"><span>Feature</span></a> 
             </div>
             <div class="nav nav-wo" id="ajaxrequest2">
@@ -38,6 +38,36 @@
               <div class="hidden hidebutton"></div>
     </header>
 
+    <!----mobile nav---->
+    
+    <div class="MOBHead">
+          <center /> 
+       
+                    <div class="Mlogo showMOBNAV"> 
+                    </div> 
+                
+          <div class="MOBNAV OMNAV">
+            <div class="Mnav">
+                <a href="Homepage.html">HOME</a>
+            </div>
+            <div class="Mnav Mnav-wo" id="ajaxrequestF">
+                <a href="#"><span>Feature</span></a> 
+            </div>
+            <div class="Mnav Mnav-wo" id="ajaxrequestR">
+                <a href="#"><span>Reviews</span></a>
+            </div>   
+            <div class="Mnav Mnav-wo" id="ajaxrequestA">
+                <a href="#"><span>Articles</span></a>
+            </div>
+            <div class="Mnav Msubscribe">
+                <span>SUBSCRIBE</span>
+            </div>
+                        
+          </div>
+    </div>
+
+    <!----mobile nav---->
+    
     
 <!--    <footer class="DISCLAIMER">This website is a mock up for a school project. No copyright infringement intended.</footer>
 -->
@@ -48,9 +78,9 @@
             <a href="javascript:void(0)" class="close-button">&#10006;</a>
             <h3>READ KELLY LIVE</h3>
             <div class="PUtext">Weekly Recommendations, Monthly Features, Don't miss any read</div>
-            <input type="text"><span></span></input>
-            <br /><br /><br /><br />
-            <a href="#" class="button">SUBSCRIBE</a>
+            <input onfocus="if(this.value == 'Enter email'){this.value = '';}" type="text" [B]onblur="if(this.value == ''){this.value='Name';}" [/B] id="EM" value="Enter email"><span></span></input>
+            <br /><br /><span id="success"></span><br /><br />
+            <div id="SUBJS"><a href="javascript:void(0)" class="button">SUBSCRIBE</a></div>
           </div>
         </div>
 <!----pop up subscribe end---->
@@ -66,7 +96,7 @@
              <div class="container" id="overlay">
                  
                  
-            <section>
+            <section class="mobilemini">
                         
                     <div class="HPdes des"></div>
 
@@ -110,19 +140,19 @@
                     <div class="featureM HPb1" id="F1">
                         <div id="F1text">GLITTER IN <br />THE SAND
                     <p class="subtitle">thou can wake, take away, wake long forth to oceans afar</p>            
-                            <div class="hoverlink"><a href="#"><div class="linkOUT FLO">Read POETRY</div></a></div>
+                            <div class="hoverlink"><div class="linkOUT FLO">Read POETRY</div></div>
                         </div>
                     </div>
                     <div class="featureM HPb1" id="F2">
                         <div id="F2text">CRYSTALIZED NOVELTY
                     <p class="subtitle">Classics to Grow on: University of Pittsburgh Library <br /> Alexis Arnold</p>
-                            <div class="hoverlink"><a href="#"><div class="linkOUT FLO">Read ART</div></a></div>  
+                            <div class="hoverlink"><div class="linkOUT FLO">Read ART</div></div>  
                         </div>
                     </div>
                     <div class="featureM HPb1" id="F3">
                         <div id="F3text">THE FAREWELL
                     <p class="subtitle">Photography by Gabriel Isak</p>
-                            <div class="hoverlink"><a href="#"><div class="linkOUT FLO">Read PHOTOGRPAHY</div></a></div>
+                            <div class="hoverlink"><div class="linkOUT FLO">Read PHOTOGRPAHY</div></div>
                         
                         </div>
                     </div>
@@ -162,34 +192,54 @@
                     </div>
                     
                 
-                    <div class="banner">
+                    
+                
+                <div class="FRboxall FRboxcover">
+                    <div class="FRbox FRbox1" id="ajaxrequestMV1">
+                        <div class="linkOUT FRboxtext">Nell-Holding onto Gravity</div>  
+                    </div>
+                    <div class="FRbox FRbox2" id="ajaxrequestMV2">
+                        <div class="linkOUT FRboxtext">2NE1-Missing you</div>  
+                    </div>
+                    <div class="FRbox FRbox3">
+                        <div class="linkOUT FRboxtext">Solace, Amy Autumn</div>  
+                    </div>
+                    <div class="FRbox FRbox4">
+                        <div class="linkOUT FRboxtext">Inserirefloppino: F4</div>  
+                    </div>
+                    <div class="FRbox FRbox5"> 
+                        <div class="linkOUT FRboxtext">Short Film: Awaiting</div>  
+                    </div>
+                    
+                    <div class="FRbox FRbox6"> 
+                        <div id="SSCR">SUBSCRIBE</div>  
+                    </div>
+                    
+                </div>
+                <!----tablet/mobile subscribe---->
+                <div class="row TMsub">
+                  <div class="box small-6 large-centered">
+                    <h3>READ KELLY LIVE</h3>
+                    <div class="PUtext">Weekly Recommendations, Monthly Features, Don't miss any read</div>
+                    <input onfocus="if(this.value == 'Enter email'){this.value = '';}" type="text" [B]onblur="if(this.value == ''){this.value='Name';}" [/B] id="EM" value="Enter email"><span></span></input>
+                    <br /><br /><br /><br />
+                    <a href="javascript:void(0)" class="button">SUBSCRIBE</a>
+                  </div>
+                </div>
+                
+                
+                
+                <div class="banner">
                         <a href="#">
                         <div id="ajaxrequestbanner1">
                         <div class="HPbanner1">
-                        <h2>Editor's pick</h2>
-                        <p class="title">Magnolia's Cafe</p>
+                        <div class="HPbandes">Editor's pick</div>
+                        <div class="BANb1">Magnolia </div>
+                        <p class="title"><br />Lily of the Valley</p>
                         </div>
                         </div>
                         </a>    
                     </div>
-                
-                <div class="FRboxall FRboxcover FRboxtext">
-                    <div class="FRbox FRbox1">
-                        <div class="linkOUT IMG1">RING</div>  
-                    </div>
-                    <div class="FRbox FRbox2">
-                        <div class="linkOUT IMG2">풍경</div>  
-
-                    </div>
-                    <div class="FRbox FRbox3">
-                    </div>
-                    <div class="FRbox FRbox4">
-                    </div>
-                    <div class="FRbox FRbox5">
-                    </div>
-                    
-                </div>
-                
                 
                 
                 
@@ -197,13 +247,7 @@
                     </div>
                  </section>
                  
-                 <div class="footer">
-                     <div class="contact">
-                         <a id="CON" href="chryvengea.tumblr.com" target="_blank">resources: chryvengea.tumblr.com</a>
-                     </div>
-                     <div class="ICON">
-                     </div>
-                 </div>
+                 
         </div>
 
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>         
@@ -221,6 +265,16 @@
     
     
     </div>
+    
+                <div class="footer">
+                     <div class="contact">
+                         <a id="CON" href="chryvengea.tumblr.com" target="_blank">resources: chryvengea.tumblr.com</a>
+                     </div>
+                     <div class="ICON">
+                     </div>
+                 </div>
+    
+    
     
     
 </div>
