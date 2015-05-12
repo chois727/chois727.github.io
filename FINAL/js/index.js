@@ -1,4 +1,6 @@
- $(document).ready(function () {
+ 
+
+$(document).ready(function () {
             $('section').waypoint(function (direction) {
                 if (direction == 'down') {
                     $('header').css("height", "10px");
@@ -38,7 +40,7 @@
      
 
 
-     
+    $(window).load(function(){
       function requestFile(url){
             $.ajax(
                 {
@@ -98,7 +100,7 @@
             }
         ) 
           
-
+    })
 $(window).load(function(){
         $(function(){
             $('.hidebutton').click(function(){
