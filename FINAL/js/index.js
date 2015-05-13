@@ -186,7 +186,7 @@ $(document).scroll(function() {
          
 /*----JSON----*/ 
 
-         $(function() {
+$(function() {
         
         function requestFile(url){
             $.ajax(
@@ -195,7 +195,7 @@ $(document).scroll(function() {
                     cache: false,
                     dataType: "json",
                     success: function(data){
-                        $("#success").html( data.SUBSUC );
+                        $(".success").html( data.SUBSUC );
                     }
                 }
             );
@@ -206,7 +206,7 @@ $(document).scroll(function() {
             }
         )
 })
-     
+        
        
        
 /*----JSON end----*/

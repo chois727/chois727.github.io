@@ -123,7 +123,7 @@ header.shrunk{
 .Acontainer {
     height: 100%;
     position: relative;
-    top: 6vh;
+    top: 15vh;
     width: 100%;
 
 
@@ -1863,11 +1863,7 @@ a:active{
         padding: 0% 0% 4% 4%;
     }
 
-    /*video{
-        position: absolute;
-        display: none;
-    }
-    */
+   
     .HPb1{
         float: left;
         width: 100%;
