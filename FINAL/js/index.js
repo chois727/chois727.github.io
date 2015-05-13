@@ -188,7 +188,7 @@ $(document).scroll(function() {
 
 $(function() {
         
-        function requestFile(url){
+        function requestEmail(url){
             $.ajax(
                 {
                     url: url,
@@ -201,8 +201,8 @@ $(function() {
             );
                 
         }
-        $("#SUBJS").click(function(){
-            requestFile("data.json");
+        $(".button").click(function(){
+            requestEmail("data.json");
             }
         )
 })
