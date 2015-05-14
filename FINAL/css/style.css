@@ -1702,7 +1702,7 @@ a:active{
 
 
 /*----mobile----*/
-@media (max-width: 520px) {
+@media (max-width: 480px) {
     body {   
         -webkit-animation: none;
 
@@ -1799,6 +1799,7 @@ a:active{
     z-index: 100;
     }
     
+
     /*----hide web header/ show mobile header----*/
 
    
@@ -1816,7 +1817,7 @@ a:active{
     }
     
     .FPb1{
-        font-size: 60px;
+        margin-left: -40px;
     }
     .HPb1{
         margin: 0%;
@@ -1898,14 +1899,21 @@ a:active{
     }
     
     .FPs1 .FPb1 .FPb1text{
-        font-size: 20pt;
-        width: 100%;
+        overflow-x: hidden;
     
+    }
+    
+    .FPb1 {
+        font-size: 20%;
     }
     
     .FPs2{
         margin-bottom: 30px;
         
+    }
+    .FPb1text{
+        font-size: 20%;
+    
     }
     .FRbox{
         clear: both;
