@@ -1846,6 +1846,7 @@ a:active{
     }
     
     .PinkTape{
+      display: block;
       border: solid 0;
       -webkit-animation: HIDEcolor 1s infinite;
       transition: 0.5s ease;    
