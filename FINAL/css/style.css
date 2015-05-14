@@ -2,6 +2,8 @@
 
 html{
     width: 100%;
+    overflow-x: hidden;
+
 
 }
 
@@ -1428,6 +1430,8 @@ a:active{
     html{
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
+
     }
     
     .nav{
