@@ -1816,9 +1816,7 @@ a:active{
         display:none;
     }
     
-    .FPb1{
-        margin-left: -40px;
-    }
+  
     .HPb1{
         margin: 0%;
     }
@@ -1904,7 +1902,8 @@ a:active{
     }
     
     .FPb1 {
-        font-size: 20%;
+        font-size: 55pt;
+        
     }
     
     .FPs2{
@@ -1912,7 +1911,7 @@ a:active{
         
     }
     .FPb1text{
-        font-size: 20%;
+        font-size: 40pt;
     
     }
     .FRbox{
@@ -1962,16 +1961,7 @@ a:active{
         height: 200px;
     
     }
-    .FPb1{
-        font-size: 90px;
-        line-height: 1em;
-    }
-    
-    .FPb1text{
-        font-size: 50px;
-        line-height: 1em;
-        padding-top: 60px;
-    }
+ 
     
     .HPbanner1{
         margin-bottom: 40%;
