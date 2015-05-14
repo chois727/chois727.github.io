@@ -1527,6 +1527,14 @@ a:active{
       font-size: 20pt;
     }
     
+    .FVIDC{
+        background: url(img/HP/FX-homepage.png);
+        background-size: cover;
+    }
+    .Fvid{
+        display: none;
+    }
+    
     .HPb1{
      color: snow;
     }
@@ -1751,6 +1759,16 @@ a:active{
         opacity: 0;
     
     }
+    
+     .FVIDC{
+        background: url(img/HP/FX-homepage.png);
+        background-size: cover;
+    }
+    #Fvid{
+        display: none;
+    }
+    
+    
     .MOBNAV{
         margin-top: 80px;
         width: 60%;
