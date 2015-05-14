@@ -1762,7 +1762,9 @@ a:active{
     
      .FVIDC{
         background: url(img/HP/FX-homepage.png);
-        background-size: cover;
+        background-size: contain;
+        width: 100%;
+        overflow-x: hidden;
     }
     #Fvid{
         display: none;
