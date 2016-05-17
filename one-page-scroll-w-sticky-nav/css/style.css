@@ -1,0 +1,254 @@
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+html{
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    background: #555555;
+
+}
+header,
+nav,
+footer,
+div {
+  width: 100%;
+}
+.logo{
+    background: url(img/logo.png) no-repeat;
+    background-size: cover;
+    background-position: 50% 140%;
+    position: fixed;
+    width: 20%;
+    height: 50%;
+    z-index: 100;
+    left: 5vh;
+}
+.header {
+    align-content: center;
+  background: url(img/2079625871_f1f9b32bcf_z.jpg) no-repeat;
+    background-size: cover;
+    height: 40vh;
+    position: fixed;
+  padding: 10%;
+    z-index: -1;
+
+}
+nav {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.74);
+  overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+    left: 5vh;
+    position: relative;
+
+}
+nav ul li {
+  display: inline-block;
+  margin: 0vh vh 0vh 0;
+  padding: 5px 0;
+}
+nav ul li a {
+  padding: 5px 40px;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background: #343434;
+      transition: all 1.4s cubic-bezier(0.22, 0.44, 0, 1);
+
+}
+nav ul li a:active {
+  background: #222222;
+}
+section {
+  padding: 7vh 0vh 20vh 40vh;
+  height: 80vh;
+  font-family: 'Raleway', sans-serif;
+}
+/*--
+section#section1,
+section#section3 {
+  background: #343434;
+  color: #eee;
+}
+section#section2,
+section#section4 {
+  background: #666;
+  color: #eee;
+}
+--*/
+
+section{
+    background: #404041;
+    color: #fff;
+}
+h1 {
+  font-size: 10vh;
+    opacity: 1;
+    left: 25%;
+    position: fixed;
+  padding: 10%;
+  color: #fff;
+  text-align: left;
+    z-index: 1;
+}
+
+.SB{
+    font-size: 4vh;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.SP{
+    line-height: 1.6em;
+    font-size: 2vh;
+}
+
+.SPLorem1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 10vh;
+}
+.SPLorem2{
+    margin: 0;
+    font-size: 8vh;
+}
+.SPLorem3{
+    margin: 0;
+    font-size:4vh;
+}
+#section1{
+    top: 45vh;
+    position: relative;
+    z-index: 2;
+    
+}
+#section2{
+    position: relative;
+    z-index: 3;
+    top: -20vh;
+    background: #555555;
+    
+}
+
+.CB{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 2vh;
+    border: 10px solid;
+
+}
+
+#CB1{
+    background: #ef4036;
+}
+#CB2{
+    background: #fab061;
+}
+#CB3{
+    background: #3392cf;
+}
+
+#CB4{
+    background: #404041;
+}
+
+#SBTyp{
+    margin-top: 250px;
+}
+#section3{
+    position: relative;
+    z-index: 3;
+    top: -20vh;
+    height: 300vh;
+    background: #404041;
+    
+}
+
+
+
+.IMG {
+    width: 500px;
+    position: relative;
+    height: 300px;
+    background-size: 50%;
+    margin: 10px;
+}
+
+#img1{
+    background: url(img/444444.png) no-repeat;
+    background-size: contain;
+}
+#img2{
+    background: url(img/MU/Stationery%20Branding%20Mockup_F.jpg) no-repeat;
+    background-size: contain;
+    height: 350px;
+}
+#img3{
+    background: url(img/MU/lamp_post_signs.jpg) no-repeat;
+    background-size: contain;
+}
+#img4{
+    background: url(img/MU/Street%20Billboard%201.jpg) no-repeat;
+    background-size: contain;
+}
+#img5{
+    background: url(img/MU/Street%20Billboard%202.jpg) no-repeat;
+    background-size: contain;
+}
+#img6{
+    background: url(img/MU/wall_ad_1.jpg) no-repeat;
+    background-size: contain;
+}
+#img7{
+    background: url(img/MU/wall_ad_2_nk.jpg) no-repeat;
+    background-size: contain;
+}
+
+
+#section4{
+    position: relative;
+    z-index: 4;
+    top: -20vh;
+    background: #555555;
+    
+}
+
+#WEB {
+    font-style: none;
+    font-size: 2vh;
+    color: #fff;
+    
+}
+#WEB:hover {
+    font-style: none;
+    font-size: 2vh;
+    color: #343434;
+    
+}
+#WEB:active {
+    font-style: none;
+    font-size: 2vh;
+    color: #2e2e2e;
+    
+}
+footer{
+    position: relative;
+    z-index: 5;
+    width: 200vh;
+    height: 50vh;
+    top: -20vh;
+    background: url(img/january_marsbar1-e1379572048375-700x500.jpg) no-repeat;
+    background-size: cover;
+    
+}
