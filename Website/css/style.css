@@ -65,7 +65,6 @@ body {
 
 #vid1{
   
-    min-width: 80vh;
     min-height: 100%;
     width: auto;
     height: auto;
@@ -153,6 +152,8 @@ body {
         opacity: 0.7;
         position: fixed;
         top: -100px;
+        min-width: 100%;
+
 
 }
 
