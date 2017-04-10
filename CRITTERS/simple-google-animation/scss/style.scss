@@ -1,0 +1,45 @@
+$item-load: 4;
+$load-colors: #3A8DF2, #E14E39, #FCC000, #3AA05C;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f5f5;
+}
+
+.loading {
+	position: relative;
+}
+
+.item {
+	$size: 20px;
+	display: inline-block;
+	margin: 0 7px;
+	width: $size;
+	height: $size;
+	border-radius: 100%;
+	animation: load-ball .5s ease-in-out infinite alternate;
+}  
+
+@for $i from 1 through $item-load {
+	.item-#{$i} {
+		background: nth($load-colors, $i);
+		animation-delay: #{($i / ($item-load * 2.5))}s;
+	}
+}
+@keyframes load-ball {
+	0% {
+	  transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-13px);
+	}
+}
